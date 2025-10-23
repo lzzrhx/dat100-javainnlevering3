@@ -3,10 +3,7 @@ package no.hvl.dat100.innlevering3.tests;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import no.hvl.dat100.innlevering3.oppgave2.Bilde;
-import no.hvl.dat100.innlevering3.oppgave2.Tekst;
-import no.hvl.dat100.innlevering3.oppgave3.*;
-import no.hvl.dat100.innlevering3.oppgave4.*;
+import no.hvl.dat100.innlevering3.*;
 
 public class TestSkrivBlogg {
     private static String FILNAVN = "blogg.dat";

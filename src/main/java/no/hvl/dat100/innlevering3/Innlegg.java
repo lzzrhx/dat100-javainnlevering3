@@ -69,4 +69,9 @@ public abstract class Innlegg {
     public boolean equals(Innlegg innlegg) {
         return this.id == innlegg.id;
     }
+
+    // TODO:
+    public String toHTML() {
+        return null;
+    }
 }
