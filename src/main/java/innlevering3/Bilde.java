@@ -1,4 +1,4 @@
-package no.hvl.dat100.innlevering3;
+package innlevering3;
 
 public class Bilde extends Tekst {
 
@@ -12,7 +12,7 @@ public class Bilde extends Tekst {
 
     // Konstruktør
     public Bilde(String bruker, String dato, int likes, String tekst, String url) {
-        super(bruker, dato, likes, url);
+        super(bruker, dato, likes, tekst);
         this.url = url;
     }
 
@@ -28,7 +28,7 @@ public class Bilde extends Tekst {
 
     // Stringrepresentasjon av klassen
     public String toString() {
-        return "BILDE\n" + super.id() + super.bruker() + "\n" + super.dato() + "\n" + super.likes() + "\n" + super.tekst() + url + "\n";
+        return "BILDE\n" + super.id() + "\n" + super.bruker() + "\n" + super.dato() + "\n" + super.likes() + "\n" + super.tekst() + "\n" + url + "\n";
     }
 
     // TODO:

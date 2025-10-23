@@ -1,4 +1,4 @@
-package no.hvl.dat100.innlevering3;
+package innlevering3;
 
 public abstract class Innlegg {
 

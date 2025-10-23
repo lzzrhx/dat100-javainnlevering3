@@ -1,6 +1,5 @@
-package no.hvl.dat100.innlevering3.tests;
-
-import no.hvl.dat100.innlevering3.Innlegg;
+package innlevering3.tests;
+import innlevering3.*;
 
 public class TInnlegg extends Innlegg {
 

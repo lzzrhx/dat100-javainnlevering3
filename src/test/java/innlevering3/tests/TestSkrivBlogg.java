@@ -1,13 +1,12 @@
-package no.hvl.dat100.innlevering3.tests;
+package innlevering3.tests;
+import innlevering3.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import no.hvl.dat100.innlevering3.*;
-
 public class TestSkrivBlogg {
     private static String FILNAVN = "blogg.dat";
-    private static String MAPPE = System.getProperty("user.dir") + "/src/test/java/no/hvl/dat100/tests/";
+    private static String MAPPE = System.getProperty("user.dir") + "/src/test/java/tests/";
     
     @Test
     public void testskriv() {

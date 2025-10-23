@@ -1,4 +1,5 @@
-package no.hvl.dat100.innlevering3.tests;
+package innlevering3.tests;
+import innlevering3.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;

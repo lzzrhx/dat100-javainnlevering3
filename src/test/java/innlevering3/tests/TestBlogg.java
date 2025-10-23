@@ -1,10 +1,8 @@
-package no.hvl.dat100.innlevering3.tests;
+package innlevering3.tests;
+import innlevering3.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-
-import no.hvl.dat100.innlevering3.oppgave2.*;
-import no.hvl.dat100.innlevering3.oppgave3.*;
 
 public class TestBlogg {
 
