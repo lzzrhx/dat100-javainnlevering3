@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>no.hvl.dat100</groupId>
   <artifactId>dat100-javainnlevering3</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -7,6 +8,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>24</maven.compiler.release>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <dependencies>
@@ -17,5 +19,19 @@
             <version>5.13.4</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <mainClass>no.hvl.dat100.innlevering3.Program</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>

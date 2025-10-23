@@ -1,12 +1,12 @@
-package no.hvl.dat100.tests;
+package no.hvl.dat100.innlevering3.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import no.hvl.dat100.oppgave2.Bilde;
-import no.hvl.dat100.oppgave2.Tekst;
-import no.hvl.dat100.oppgave4.SkrivBlogg;
-import no.hvl.dat100.oppgave6.HtmlBlogg;
+import no.hvl.dat100.innlevering3.oppgave2.Bilde;
+import no.hvl.dat100.innlevering3.oppgave2.Tekst;
+import no.hvl.dat100.innlevering3.oppgave4.SkrivBlogg;
+import no.hvl.dat100.innlevering3.oppgave6.HtmlBlogg;
 
 class TestHtmlBlogg {
 
