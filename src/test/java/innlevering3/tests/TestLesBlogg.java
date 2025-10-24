@@ -11,9 +11,9 @@ public class TestLesBlogg {
     @Test
     public void testles() {
         Blogg samling = LesBlogg.les(MAPPE,FILNAVN);
-        Tekst innlegg1 = new Tekst("Ole Olsen", "23-10", "en tekst");
-        Bilde innlegg2 = new Bilde("Oline Olsen", "24-10", "et bilde", "http://www.picture.com/oo.jpg");
-        assertEquals(samling.getAntall(), 2);
+        Tekst innlegg1 = new Tekst(1, "Ole Olsen", "23-10", "en tekst");
+        Bilde innlegg2 = new Bilde(2, "Oline Olsen", "24-10", "et bilde", "http://www.picture.com/oo.jpg");
+        assertEquals(samling.antall(), 2);
         assertTrue(samling.finnes(innlegg1));
         assertTrue(samling.finnes(innlegg2));
         System.out.println(samling.toString());

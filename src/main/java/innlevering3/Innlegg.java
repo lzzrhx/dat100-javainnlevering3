@@ -3,7 +3,7 @@ package innlevering3;
 public abstract class Innlegg {
 
     // Klassevariabler
-    private static int num = 0;
+    //private static int num = 0;
 
     // Objektvariabler
     private int id;
@@ -12,14 +12,15 @@ public abstract class Innlegg {
     private int likes;
 
     // Konstruktør
-    public Innlegg(String bruker, String dato) {
-        this(bruker, dato, 0);
+    public Innlegg(int id, String bruker, String dato) {
+        this(id, bruker, dato, 0);
     }
 
     // Konstruktør
-    public Innlegg(String bruker, String dato, int likes) {
-        Innlegg.num++;
-        this.id = Innlegg.num;
+    public Innlegg(int id, String bruker, String dato, int likes) {
+        //Innlegg.num++;
+        //this.id = Innlegg.num;
+        this.id = id;
         this.bruker = bruker;
         this.dato = dato;
         this.likes = likes;

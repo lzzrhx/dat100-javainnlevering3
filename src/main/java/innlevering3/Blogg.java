@@ -101,6 +101,7 @@ public class Blogg {
             if (samling[i].equals(innlegg)) {
                 antall--;
                 samling[i] = samling[antall];
+                samling[antall] = null;
                 return true;
             }
         }

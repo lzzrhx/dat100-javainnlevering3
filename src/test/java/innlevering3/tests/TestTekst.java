@@ -8,8 +8,9 @@ public class TestTekst {
     
     @Test
     public void testConstructor1() {
-        Tekst tekst = new Tekst("Ole Olsen", "23-10", "en tekst");
+        Tekst tekst = new Tekst(1, "Ole Olsen", "23-10", "en tekst");
         assertEquals("Ole Olsen", tekst.bruker());
+        assertEquals(1, tekst.id());
         assertEquals(0, tekst.likes());
         assertEquals("23-10", tekst.dato());
         assertEquals("en tekst", tekst.tekst());
@@ -17,8 +18,9 @@ public class TestTekst {
 
     @Test
     public void testConstructor2() {
-        Tekst tekst = new Tekst("Ole Olsen", "23-10", 7, "en tekst");
+        Tekst tekst = new Tekst(1, "Ole Olsen", "23-10", 7, "en tekst");
         assertEquals("Ole Olsen", tekst.bruker());
+        assertEquals(1, tekst.id());
         assertEquals(7, tekst.likes());
         assertEquals("23-10", tekst.dato());
         assertEquals("en tekst", tekst.tekst());
@@ -27,7 +29,7 @@ public class TestTekst {
     @Test
     public void testSet() {
         Tekst tekst = new Tekst(1, "Ole Olsen", "23-10", "en tekst");
-        tekst.setTekst("ny tekst");
+        tekst.tekst("ny tekst");
         assertEquals("ny tekst", tekst.tekst());
     }
     

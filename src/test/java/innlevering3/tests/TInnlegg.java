@@ -3,12 +3,12 @@ import innlevering3.*;
 
 public class TInnlegg extends Innlegg {
 
-    public TInnlegg(String bruker, String dato) {
-        super(bruker,dato);
+    public TInnlegg(int id, String bruker, String dato) {
+        super(id, bruker,dato);
     }
 
-    public TInnlegg(String bruker, String dato, int likes) {
-        super(bruker,dato,likes);
+    public TInnlegg(int id, String bruker, String dato, int likes) {
+        super(id, bruker,dato,likes);
     }
 
 }

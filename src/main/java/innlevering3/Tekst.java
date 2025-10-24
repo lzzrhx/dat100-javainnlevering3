@@ -11,13 +11,13 @@ public class Tekst extends Innlegg {
     }
 
     // Konstruktør
-    public Tekst(String bruker, String dato, String tekst) {
-        this(bruker, dato, 0, tekst);
+    public Tekst(int id, String bruker, String dato, String tekst) {
+        this(id, bruker, dato, 0, tekst);
     }
     
     // Konstruktør
-    public Tekst(String bruker, String dato, int likes, String tekst) {
-        super(bruker, dato, likes);
+    public Tekst(int id, String bruker, String dato, int likes, String tekst) {
+        super(id, bruker, dato, likes);
         this.tekst = tekst;
     }
 
