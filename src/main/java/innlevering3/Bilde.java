@@ -1,4 +1,5 @@
 package innlevering3;
+import innlevering3.HtmlBlogg;
 
 public class Bilde extends Tekst {
 
@@ -26,13 +27,15 @@ public class Bilde extends Tekst {
         this.url = url;
     }
 
-    // Stringrepresentasjon av klassen
+    // Stringrepresentasjon av objektet
     public String toString() {
         return "BILDE\n" + super.id() + "\n" + super.bruker() + "\n" + super.dato() + "\n" + super.likes() + "\n" + super.tekst() + "\n" + url + "\n";
     }
 
-    // TODO:
-    public String toHTML() {
-        return null;
+    // HTML-representasjon av objektet
+    public String toHTML(int indent) {
+        String result = super.toHTML(indent);
+        result += HtmlBlogg.htmlLine(indent, "<img src=\"" + url + "\" height=600 width=800>");
+        return result; 
     }
 }

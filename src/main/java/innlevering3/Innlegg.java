@@ -1,4 +1,5 @@
 package innlevering3;
+import innlevering3.HtmlBlogg;
 
 public abstract class Innlegg {
 
@@ -61,18 +62,18 @@ public abstract class Innlegg {
         likes++;
     }
 
-    // Stringrepresentasjon av klassen
-    public String toString() {
-        return id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
-    }
-
     // Sjekk om ett innlegg er likt ett annet innlegg
     public boolean equals(Innlegg innlegg) {
         return this.id == innlegg.id;
     }
 
-    // TODO:
-    public String toHTML() {
-        return null;
+    // Stringrepresentasjon av objektet
+    public String toString() {
+        return id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
+    }
+
+    // HTML-representasjon av objektet
+    public String toHTML(int indent) {
+        return HtmlBlogg.htmlLine(indent, "<h2>" + bruker + "@" + dato + " [" + likes + "]</h2>");
     }
 }

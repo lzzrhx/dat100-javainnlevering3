@@ -1,4 +1,5 @@
 package innlevering3;
+import innlevering3.HtmlBlogg;
 
 public class Tekst extends Innlegg {
 
@@ -26,13 +27,15 @@ public class Tekst extends Innlegg {
         this.tekst = tekst;
     }
 
-    // Stringrepresentasjon av klassen
+    // Stringrepresentasjon av objektet
     public String toString() {
         return "TEKST\n" + super.toString() + tekst + "\n";
     }
 
-    // TODO:
-    public String toHTML() {
-        return null;
+    // HTML-representasjon av objektet
+    public String toHTML(int indent) {
+        String result = super.toHTML(indent);
+        result += HtmlBlogg.htmlLine(indent, "<p>" + tekst + "</p>");
+        return result; 
     }
 }

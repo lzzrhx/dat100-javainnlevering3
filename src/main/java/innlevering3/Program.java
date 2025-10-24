@@ -17,5 +17,9 @@ public class Program {
         Blogg bloggLest = LesBlogg.les(System.getProperty("user.dir") + "/src/test/java/innlevering3/tests/", "bloggkorrekt.dat");
         System.out.println(bloggLest.samling().length);
         System.out.println(bloggLest.toString());
+        HtmlBlogg htmlBlogg = new HtmlBlogg(10);
+        htmlBlogg.leggTilUtvid(t);
+        htmlBlogg.leggTilUtvid(b);
+        System.out.println(htmlBlogg);
     }
 }
